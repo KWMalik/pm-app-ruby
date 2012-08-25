@@ -4,3 +4,13 @@ bundle install
 
 for cucumber -> rails generate cucumber:install
 fo RSpec -> rails g rspec:install
+
+rails g model project name:string
+
+rake db:migrate	
+
+_form partial
+	form_for() do |s|
+	s.label :naem, "Project name"
+	s.text_field :name
+	s.submit
