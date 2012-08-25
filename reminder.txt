@@ -1,0 +1,6 @@
+#reminder
+
+bundle install
+
+for cucumber -> rails generate cucumber:install
+fo RSpec -> rails g rspec:install
