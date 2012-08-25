@@ -11,7 +11,9 @@ module NavigationHelpers
     
     when /the homepage/
       '/'
-   
+    when /the project page for "([^\"]*)"/
+      project_path(Project.find_by_name!($1))
+
     else
        begin
         page_name =~ /^the (.*) page$/
